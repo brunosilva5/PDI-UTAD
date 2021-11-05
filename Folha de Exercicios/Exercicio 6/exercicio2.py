@@ -14,6 +14,7 @@ plt.title("Imagem Ajustada com skimage")
 plt.imshow(img_adjust, "gray")
 
 plt.figure()
-plt.hist(img_adjust.ravel(), 256, [0, 256])
+# plt.hist(img_adjust.ravel(), 256, [0, 256])
+plt.hist(img.ravel(), 256, [0, 256])
 
 plt.show()

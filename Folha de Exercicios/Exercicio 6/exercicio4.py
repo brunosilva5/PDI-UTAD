@@ -4,16 +4,17 @@ from skimage import exposure
 import numpy as np
 import time
 
-k = 3
+k = 2.9
 
 img = cv2.imread("../Imagens/fce_clara.bmp", 0)
 
 plt.imshow(img, "gray")
 
 start1 = time.time()
-table = np.array([pow(img, k) for img in range(0, 256)], dtype="uint8")
+table = np.array([pow(img, k) for img in range(0, 256)])
 
 img_transformation = cv2.LUT(img, table)
+# img_transformation = cv2.cvtColor(img_transformation, cv2.COLOR_GRAY2BGR)
 end1 = time.time()
 
 lut = {}
