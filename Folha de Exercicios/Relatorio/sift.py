@@ -1,8 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
 
-img1 = cv2.imread("igreja3.jpg")
-img2 = cv2.imread("igreja4.jpg")
+img1 = cv2.imread("igreja1.jpg")
+img2 = cv2.imread("igreja2.jpg")
 
 img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
@@ -27,5 +27,5 @@ img3 = cv2.drawMatches(
 
 
 plt.imshow(img3)
-# plt.savefig("sift_match.jpg")
+plt.savefig("sift_match.jpg")
 plt.show()
