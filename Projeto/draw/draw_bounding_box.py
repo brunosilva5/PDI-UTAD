@@ -65,7 +65,7 @@ for txt_name in txt_list:
             (int(round(bb[0])), int(round(bb[2]))),
             (int(round(bb[1])), int(round(bb[3]))),
             (0, 0, 255),
-            10,
+            15,
         )
         # uncomment to show label index
         # cv2.putText(img, cls, (int(round(bb[0])),int(round(bb[2]))-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255),2,cv2.LINE_AA)
